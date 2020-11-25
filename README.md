@@ -13,3 +13,5 @@ what async value does is safely manipulate asynchronous data.
 By using [AsyncValue], you are guaranteed that you cannot forget to handle the loading/error state of an asynchronous operation.
 
 It also expose some utilities to nicely convert an [AsyncValue] to a different object. For example, a Flutter Widget may use [when] to convert an [AsyncValue] into either a progress indicator, an error screen, or to show the data:
+
+![image](https://user-images.githubusercontent.com/39657409/100195229-089d0f80-2f1d-11eb-9054-b3022cd1f4f3.png)
