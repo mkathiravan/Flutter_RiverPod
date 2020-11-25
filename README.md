@@ -1,16 +1,15 @@
 # flutter_riverpod
 
-A new Flutter application.
+  In this article, What we are gonna learn is about how we can fetch API in the flutter app using Riverpod instead of the Future.
 
-## Getting Started
+ “Also a provider but a different one”
+ 
+What you do here is Create a Provider and Consumer the Provider. But today we are just gonna see how to make API calls.
 
-This project is a starting point for a Flutter application.
+Let's create a home screen that will extend a Consumer Widget, Inside the build method we will initialize an instance of async value.
 
-A few resources to get you started if this is your first Flutter project:
+what async value does is safely manipulate asynchronous data.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+By using [AsyncValue], you are guaranteed that you cannot forget to handle the loading/error state of an asynchronous operation.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It also expose some utilities to nicely convert an [AsyncValue] to a different object. For example, a Flutter Widget may use [when] to convert an [AsyncValue] into either a progress indicator, an error screen, or to show the data:
